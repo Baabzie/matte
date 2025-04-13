@@ -23,6 +23,8 @@ export default function Home() {
     }
   }, [imageVisible]);
 
+  const basePath = process.env.NODE_ENV === "production" ? "" : "";
+
   return (
     <div className={styles.container}>
       <div
@@ -31,7 +33,7 @@ export default function Home() {
         }`}
       >
         <img
-          src="/logga.png"
+          src={`${basePath}/logga.png`}
           alt="Logo of VIDEL"
           className={styles.responsiveImage}
         />
