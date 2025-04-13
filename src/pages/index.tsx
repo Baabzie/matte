@@ -23,7 +23,7 @@ export default function Home() {
     }
   }, [imageVisible]);
 
-  const basePath = process.env.NODE_ENV === "production" ? "" : "";
+  const basePath = process.env.NODE_ENV === "production" ? "/matte" : "";
 
   return (
     <div className={styles.container}>
