@@ -30,12 +30,10 @@ export default function Home() {
           styles.imageWrapper
         }`}
       >
-        <Image
+        <img
           src="/logga.png"
           alt="Logo of VIDEL"
-          width={600}
-          height={400}
-          layout="responsive"
+          className={styles.responsiveImage}
         />
       </div>
 
