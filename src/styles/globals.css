@@ -1,3 +1,12 @@
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade.visible {
+  opacity: 1;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
